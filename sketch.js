@@ -26,7 +26,7 @@ function setup() {
 
 	ground1 = new Ground(width/2,600);
 
-	stone1 = new Stone(230,400);
+	stone1 = new Stone(230,400,100);
 
 	//boy = createSprite(300,400,20,20);
 	//boy.addImage(boyIMG);
