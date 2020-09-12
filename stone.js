@@ -1,6 +1,6 @@
 class Stone {
 
-    constructor(x,y,r,angle){
+    constructor(x,y,r){
 
         var options = {
             'isStatic':false,
@@ -34,10 +34,10 @@ class Stone {
 
 
         var pos =this.body.position;
-        var angle = this.body.angle;
+        
         push();
         translate(pos.x, pos.y);
-        rotate(angle);
+        
         
         
 
@@ -48,7 +48,7 @@ class Stone {
         
 
         imageMode(CENTER);
-        image(this.image, 0, 0, this.radius, this.radius);
+        image(this.image, 0, 0, this.radius * 2, this.radius * 2);
         pop();
 
 
